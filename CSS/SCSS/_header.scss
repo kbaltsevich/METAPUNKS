@@ -4,7 +4,7 @@
   &__btn-wrapper {
     width: 100%;
     display: flex;
-    justify-content: right;
+    justify-content: flex-end;
   }
 
   &__btn {
@@ -52,7 +52,7 @@
     color: #5cfc3c;
     text-decoration: none;
     text-transform: uppercase;
-    font-family: "Krona One";
+    font-family: "Korona One";
     font-style: normal;
     font-weight: normal;
   }

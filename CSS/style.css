@@ -29,10 +29,10 @@ body {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: right;
-  -webkit-justify-content: right;
-      -ms-flex-pack: right;
-          justify-content: right;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 
 .header__btn {
@@ -95,7 +95,7 @@ body {
   color: #5cfc3c;
   text-decoration: none;
   text-transform: uppercase;
-  font-family: "Krona One";
+  font-family: "Korona One";
   font-style: normal;
   font-weight: normal;
 }
@@ -165,6 +165,7 @@ body {
   line-height: 48px;
   color: #ffffff;
   text-transform: uppercase;
+  text-align: center;
 }
 
 .main__counter {
