@@ -26,9 +26,11 @@ body {
 .header__btn-wrapper {
   width: 100%;
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: right;
+  -webkit-justify-content: right;
       -ms-flex-pack: right;
           justify-content: right;
 }
@@ -53,12 +55,15 @@ body {
   height: 49px;
   border-top: 1px solid #5cfc3c;
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
   -webkit-box-align: center;
+  -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
 }
@@ -75,9 +80,11 @@ body {
 .header__menu {
   width: 533px;
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
@@ -107,12 +114,15 @@ body {
   width: 100%;
   height: 100%;
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
   -webkit-box-align: start;
+  -webkit-align-items: flex-start;
       -ms-flex-align: start;
           align-items: flex-start;
 }
@@ -132,13 +142,16 @@ body {
 
 .main__info {
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column;
   -webkit-box-align: center;
+  -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
 }
@@ -156,19 +169,23 @@ body {
 
 .main__counter {
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
+  -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-box-align: center;
+  -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
   width: 171px;
   height: 51px;
   margin: 0 0 30px;
   border: 1.68434px solid #5cfc3c;
-  border-radius: 40.4241px;
+  -webkit-border-radius: 40.4241px;
+          border-radius: 40.4241px;
 }
 
 .main__counter--btn {
@@ -184,13 +201,16 @@ body {
 
 .main__statistics {
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column;
   -webkit-box-align: center;
+  -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
   margin: 0 0 40px;
@@ -228,16 +248,22 @@ body {
 
 @font-face {
   font-family: "Mandinor";
+  src: url("../assets/fonts/Mandinor Italian FY Regular.woff");
+  src: url("../assets/fonts/Mandinor Italian FY Regular.woff2");
   src: url("../assets/fonts/Mandinor.ttf");
 }
 
 @font-face {
   font-family: "Inter";
+  src: url("../assets/fonts/Inter-Regular.woff");
+  src: url("../assets/fonts/Inter-Regular.woff2");
   src: url("../assets/fonts/Inter-VariableFont_slnt,wght.ttf");
 }
 
 @font-face {
   font-family: "Korona One";
+  src: url("../assets/fonts/krona-one-v9-latin-regular.woff");
+  src: url("../assets/fonts/krona-one-v9-latin-regular.woff2");
   src: url("../assets/fonts/KronaOne-Regular.ttf");
 }
 /*# sourceMappingURL=style.css.map */
