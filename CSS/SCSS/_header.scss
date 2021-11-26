@@ -71,7 +71,7 @@
 @media (max-width: 1160px) {
   .header {
     &__title {
-      font-size: 11.2vw;
+      font-size: 11.5vw;
       line-height: 13vw;
     }
   }
@@ -89,6 +89,7 @@
       display: none;
     }
     &__btn {
+      width: 100%;
       margin: 21px 0 12px;
     }
     &__nav {
