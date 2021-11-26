@@ -62,8 +62,37 @@
     font-family: "Mandinor";
     font-style: normal;
     font-weight: normal;
-    font-size: 138.905px;
+    font-size: 134.905px;
     line-height: 167px;
     color: #5cfc3c;
+  }
+}
+
+@media (max-width: 1160px) {
+  .header {
+    &__title {
+      font-size: 11.2vw;
+      line-height: 13vw;
+    }
+  }
+}
+
+@media (max-width: 640px) {
+  .header {
+    &__title {
+      display: flex;
+      justify-content: center;
+      text-align: center;
+      margin: 20px auto;
+    }
+    &__btn-wrapper {
+      display: none;
+    }
+    &__btn {
+      margin: 21px 0 12px;
+    }
+    &__nav {
+      display: none;
+    }
   }
 }
