@@ -4,3 +4,15 @@ body {
   height: 100%;
   overflow: hidden;
 }
+
+.mobile {
+  display: none;
+}
+
+@media (max-width: 640px) {
+  .mobile {
+    width: 100%;
+    display: flex !important;
+    justify-content: center !important;
+  }
+}

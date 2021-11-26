@@ -12,6 +12,21 @@ body {
   overflow: hidden;
 }
 
+.mobile {
+  display: none;
+}
+
+@media (max-width: 640px) {
+  .mobile {
+    width: 100%;
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -webkit-box-pack: center !important;
+        -ms-flex-pack: center !important;
+            justify-content: center !important;
+  }
+}
 .container {
   margin: 0 auto;
   max-width: 1160px;
@@ -20,6 +35,18 @@ body {
   padding: 0 20px;
 }
 
+@media (max-width: 1160px) {
+  .container {
+    max-width: 100%;
+    width: 100%;
+  }
+}
+@media (max-width: 640px) {
+  .container {
+    min-width: 272px;
+    width: 100%;
+  }
+}
 .header {
   width: 100%;
 }
@@ -99,8 +126,29 @@ body {
 
 @media (max-width: 1160px) {
   .header__title {
-    font-size: 11.5vw;
+    font-size: 11.2vw;
     line-height: 13vw;
+  }
+}
+@media (max-width: 640px) {
+  .header__title {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center;
+    margin: 20px auto;
+  }
+  .header__btn-wrapper {
+    display: none;
+  }
+  .header__btn {
+    margin: 21px 0 12px;
+  }
+  .header__nav {
+    display: none;
   }
 }
 .main {
@@ -115,6 +163,9 @@ body {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+}
+.main__mobile {
+  display: none;
 }
 .main__img {
   margin: 27px 0 0;
@@ -223,7 +274,127 @@ body {
   .main__left {
     display: none;
   }
+  .main__right {
+    margin-right: 0;
+  }
+  .main__btn {
+    width: 30vw;
+    height: 6vw;
+    font-size: 2.5vw;
+  }
+  .main--items {
+    font-size: 2.5vw;
+    line-height: 3vw;
+  }
+  .main__title {
+    font-size: 4vw;
+    line-height: 4.8vw;
+  }
+  .main__counter {
+    width: 17vw;
+    height: 5vw;
+  }
+  .main__counter--btn {
+    font-size: 3vw;
+    line-height: 4vw;
+  }
 }
+@media (max-width: 640px) {
+  .main {
+    height: auto;
+  }
+  .main__img {
+    display: none;
+  }
+  .main__info {
+    display: none;
+  }
+  .main__title {
+    text-align: left;
+    font-size: 30px;
+    line-height: 36px;
+  }
+  .main__statistics--items {
+    text-align: left;
+    font-size: 15px;
+    line-height: 30px;
+  }
+  .main__statistics--items:last-child {
+    width: 100%;
+  }
+  .main__counter {
+    width: 128px;
+    height: 39px;
+  }
+  .main__counter--btn {
+    font-size: 22.4561px;
+    line-height: 30px;
+  }
+  .main__btn {
+    width: 264px;
+    height: 55.45px;
+    font-size: 21.9755px;
+  }
+  .main__mobile {
+    margin: 10px auto;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .main__mobile--info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .main__mobile--info--statistics {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: stretch;
+        -ms-flex-pack: stretch;
+            justify-content: stretch;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+}
+.footer {
+  padding: 20px;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}
+.footer__nav {
+  width: 100%;
+}
+.footer__nav--row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 @font-face {
   font-family: "Mandinor";
   src: url("../assets/fonts/Mandinor Italian FY Regular.woff");
