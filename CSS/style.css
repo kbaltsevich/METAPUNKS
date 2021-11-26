@@ -126,7 +126,7 @@ body {
 
 @media (max-width: 1160px) {
   .header__title {
-    font-size: 11.2vw;
+    font-size: 11.5vw;
     line-height: 13vw;
   }
 }
@@ -145,6 +145,7 @@ body {
     display: none;
   }
   .header__btn {
+    width: 100%;
     margin: 21px 0 12px;
   }
   .header__nav {
@@ -331,7 +332,7 @@ body {
     line-height: 30px;
   }
   .main__btn {
-    width: 264px;
+    width: 100%;
     height: 55.45px;
     font-size: 21.9755px;
   }
